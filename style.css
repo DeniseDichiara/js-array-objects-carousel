@@ -21,7 +21,8 @@ main.img{
     border-radius: .25rem;
 }
 
-.sunny{
+.sunny,
+.moon{
     width: 5rem;
     height: 5rem;
 }

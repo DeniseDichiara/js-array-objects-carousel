@@ -27,9 +27,19 @@ const images = [
 const carouselElement = document.querySelector('div.carousel');
 console.log(carouselElement);
 
-carouselElement.innerHTML += ` <div class="carousel-item.active">
-                                    <img src="" alt="" width="60%">
-                                </div>  `
+
+images.forEach((element) => {
+    console.log(element.title)
+
+    carouselElement.innerHTML += ` <div class="carousel-item.active">
+                                    <img src="./img/${images[element]}" alt="Crousel slide" width="60%">
+                                </div>  ` ;
+});
+
+
+/**carouselElement.innerHTML += ` <div class="carousel-item.active">
+                                    <img src="${images[0]}" alt="Crousel slide" width="60%">
+                                </div>  ` ;
 
 
 /**

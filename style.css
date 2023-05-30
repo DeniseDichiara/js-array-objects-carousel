@@ -15,7 +15,13 @@ main{
 }
 
 main.img{
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     object-fit: contain;
+    border-radius: .25rem;
+}
+
+.sunny{
+    width: 5rem;
+    height: 5rem;
 }

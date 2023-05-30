@@ -23,6 +23,6 @@ main.img{
 
 .sunny,
 .moon{
-    width: 5rem;
-    height: 5rem;
+    width: 100%;
+    height: 100%
 }

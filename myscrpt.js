@@ -27,13 +27,24 @@ const images = [
 const carouselElement = document.querySelector('div.carousel');
 console.log(carouselElement);
 
+let i = 0;
 
-images.forEach((element) => {
-    console.log(element.title)
 
-    carouselElement.innerHTML += ` <div class="carousel-item.active">
-                                    <img src="./img/${images[element]}" alt="Crousel slide" width="60%">
-                                </div>  ` ;
+images.forEach((element, index) => {i++
+    if (index==0||index==5) {
+
+        console.log(element.title)
+
+    carouselElement.innerHTML += ` <div class=" = i === 1 carousel-item.active" : "carousel-item"> ` ;
+    }
+
+    ` <div class="carousel-item">
+        <img src="./img/${images[element.image]}" alt="Crousel slide" width="60%">
+        </div>  
+        
+        if((i % 5) == 0) {
+            <div></div>
+        }` ;
 });
 
 
